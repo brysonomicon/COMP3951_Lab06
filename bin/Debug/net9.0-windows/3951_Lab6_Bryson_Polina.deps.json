@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "3951_Lab6_Bryson_Polina/1.0.0": {
+        "runtime": {
+          "3951_Lab6_Bryson_Polina.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "3951_Lab6_Bryson_Polina/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

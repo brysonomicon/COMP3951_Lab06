@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            buttonPolina1 = new global::Program.ButtonPolina();
+            SuspendLayout();
+            // 
+            // buttonPolina1
+            // 
+            buttonPolina1.Location = new Point(12, 12);
+            buttonPolina1.Name = "buttonPolina1";
+            buttonPolina1.PrimaryColor = Color.LawnGreen;
+            buttonPolina1.PrimaryTransparency = 200;
+            buttonPolina1.SecondaryColor = Color.Orange;
+            buttonPolina1.SecondaryTransparency = 255;
+            buttonPolina1.Size = new Size(132, 23);
+            buttonPolina1.TabIndex = 0;
+            buttonPolina1.Text = "my beautiful text";
+            buttonPolina1.UseVisualStyleBackColor = true;
+            buttonPolina1.Click += buttonPolina1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonPolina1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private global::Program.ButtonPolina buttonPolina1;
     }
 }
