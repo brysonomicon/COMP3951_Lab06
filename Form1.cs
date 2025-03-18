@@ -6,10 +6,5 @@ namespace _3951_Lab6_Bryson_Polina
         {
             InitializeComponent();
         }
-
-        private void buttonPolina1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

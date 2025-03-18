@@ -7,10 +7,6 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -29,6 +25,7 @@
         private void InitializeComponent()
         {
             buttonPolina1 = new global::Program.ButtonPolina();
+            userControlrgbSelectorPolina1 = new UserControlRGBSelectorPolina();
             SuspendLayout();
             // 
             // buttonPolina1
@@ -43,13 +40,20 @@
             buttonPolina1.TabIndex = 0;
             buttonPolina1.Text = "my beautiful text";
             buttonPolina1.UseVisualStyleBackColor = true;
-            buttonPolina1.Click += buttonPolina1_Click;
+            // 
+            // userControlrgbSelectorPolina1
+            // 
+            userControlrgbSelectorPolina1.Location = new Point(168, 12);
+            userControlrgbSelectorPolina1.Name = "userControlrgbSelectorPolina1";
+            userControlrgbSelectorPolina1.Size = new Size(300, 170);
+            userControlrgbSelectorPolina1.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(userControlrgbSelectorPolina1);
             Controls.Add(buttonPolina1);
             Name = "Form1";
             Text = "Form1";
@@ -59,5 +63,6 @@
         #endregion
 
         private global::Program.ButtonPolina buttonPolina1;
+        private UserControlRGBSelectorPolina userControlrgbSelectorPolina1;
     }
 }
