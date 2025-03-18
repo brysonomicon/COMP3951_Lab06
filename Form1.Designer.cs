@@ -24,45 +24,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonPolina1 = new global::Program.ButtonPolina();
-            userControlrgbSelectorPolina1 = new UserControlRGBSelectorPolina();
             SuspendLayout();
-            // 
-            // buttonPolina1
-            // 
-            buttonPolina1.Location = new Point(12, 12);
-            buttonPolina1.Name = "buttonPolina1";
-            buttonPolina1.PrimaryColor = Color.LawnGreen;
-            buttonPolina1.PrimaryTransparency = 200;
-            buttonPolina1.SecondaryColor = Color.Orange;
-            buttonPolina1.SecondaryTransparency = 255;
-            buttonPolina1.Size = new Size(132, 23);
-            buttonPolina1.TabIndex = 0;
-            buttonPolina1.Text = "my beautiful text";
-            buttonPolina1.UseVisualStyleBackColor = true;
-            // 
-            // userControlrgbSelectorPolina1
-            // 
-            userControlrgbSelectorPolina1.Location = new Point(168, 12);
-            userControlrgbSelectorPolina1.Name = "userControlrgbSelectorPolina1";
-            userControlrgbSelectorPolina1.Size = new Size(300, 170);
-            userControlrgbSelectorPolina1.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(userControlrgbSelectorPolina1);
-            Controls.Add(buttonPolina1);
+            ClientSize = new Size(506, 334);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private global::Program.ButtonPolina buttonPolina1;
-        private UserControlRGBSelectorPolina userControlrgbSelectorPolina1;
     }
 }

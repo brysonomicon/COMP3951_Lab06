@@ -10,6 +10,7 @@ namespace _3951_Lab6_Bryson_Polina
         public UserControlRGBSelectorPolina()
         {
             InitializeComponent();
+            trackBarAlpha.Value = 255;
             trackBarRed.Value = 0;
             trackBarGreen.Value = 0;
             trackBarBlue.Value = 0;
@@ -17,10 +18,10 @@ namespace _3951_Lab6_Bryson_Polina
         }
 
         [Category("Polina Custom Design")]
-        [Description("The color selected by the RGB selector.")]
+        [Description("The color selected by the RGBA selector.")]
         public Color SelectedColor
         {
-            get { return Color.FromArgb(trackBarRed.Value, trackBarGreen.Value, trackBarBlue.Value); }
+            get { return Color.FromArgb(trackBarAlpha.Value, trackBarRed.Value, trackBarGreen.Value, trackBarBlue.Value); }
         }
 
         private void trackBar_ValueChanged(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace _3951_Lab6_Bryson_Polina
         private void UpdateColorPreview()
         {
             panelColorPreview.BackColor = SelectedColor;
-            labelRGB.Text = $"RGB({trackBarRed.Value}, {trackBarGreen.Value}, {trackBarBlue.Value})";
+            labelRGB.Text = $"RGBA({trackBarRed.Value}, {trackBarGreen.Value}, {trackBarBlue.Value}, {trackBarAlpha.Value})";
         }
     }
 }

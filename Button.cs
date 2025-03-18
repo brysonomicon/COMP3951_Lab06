@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Program
+namespace _3951_Lab6_Bryson_Polina
 {
     [DefaultEvent("Click")]
     public class ButtonPolina : Button
@@ -18,6 +18,18 @@ namespace Program
         private Color secondaryColor = Color.Red;
         private int primaryTransparency = 128;
         private int secondaryTransparency = 128;
+
+        private Color selectedColor = Color.Empty;
+        [Category("Polina Custom Design")]
+        [Description("The selected color to update the button's rectangle when clicked.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        public Color SelectedColor
+        {
+            get { return selectedColor; }
+            set { selectedColor = value; }
+        }
+
+        private bool updatePrimary = true;
 
         [Category("Polina Custom Design")]
         [Description("The primary color used in the custom button design.")]
@@ -49,7 +61,6 @@ namespace Program
         [Category("Polina Custom Design")]
         [Description("Transparency level (0-255) for the secondary color.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-
         public int SecondaryTransparency
         {
             get { return secondaryTransparency; }
@@ -68,6 +79,18 @@ namespace Program
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
+            if (selectedColor != Color.Empty)
+            {
+                if (updatePrimary)
+                {
+                    PrimaryColor = selectedColor;
+                }
+                else
+                {
+                    SecondaryColor = selectedColor;
+                }
+                updatePrimary = !updatePrimary;
+            }
             PolinaEvent?.Invoke(this, e);
         }
 
