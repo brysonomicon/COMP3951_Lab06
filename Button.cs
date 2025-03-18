@@ -83,16 +83,19 @@ namespace _3951_Lab6_Bryson_Polina
             {
                 if (updatePrimary)
                 {
-                    PrimaryColor = selectedColor;
+                    PrimaryTransparency = selectedColor.A;
+                    PrimaryColor = Color.FromArgb(255, selectedColor.R, selectedColor.G, selectedColor.B);
                 }
                 else
                 {
-                    SecondaryColor = selectedColor;
+                    SecondaryTransparency = selectedColor.A;
+                    SecondaryColor = Color.FromArgb(255, selectedColor.R, selectedColor.G, selectedColor.B);
                 }
                 updatePrimary = !updatePrimary;
             }
             PolinaEvent?.Invoke(this, e);
         }
+
 
         protected override void OnPaint(PaintEventArgs pevent)
         {

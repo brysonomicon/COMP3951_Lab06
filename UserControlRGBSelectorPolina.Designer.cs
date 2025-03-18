@@ -85,7 +85,7 @@
             // labelRGB
             // 
             labelRGB.AutoSize = true;
-            labelRGB.Location = new Point(170, 115);
+            labelRGB.Location = new Point(170, 113);
             labelRGB.Name = "labelRGB";
             labelRGB.Size = new Size(90, 15);
             labelRGB.TabIndex = 5;
@@ -102,7 +102,7 @@
             Controls.Add(trackBarRed);
             Controls.Add(trackBarAlpha);
             Name = "UserControlRGBSelectorPolina";
-            Size = new Size(300, 200);
+            Size = new Size(280, 200);
             ((System.ComponentModel.ISupportInitialize)trackBarAlpha).EndInit();
             ((System.ComponentModel.ISupportInitialize)trackBarRed).EndInit();
             ((System.ComponentModel.ISupportInitialize)trackBarGreen).EndInit();
