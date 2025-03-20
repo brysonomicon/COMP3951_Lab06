@@ -1,5 +1,8 @@
 namespace _3951_Lab6_Bryson_Polina
 {
+    /// <summary>
+    /// Lab 6 - Bryson Lindy & Polina Omelyantseva 
+    /// </summary>
     public partial class Form1 : Form
     {
         private System.Windows.Forms.Timer loadSimulator;
